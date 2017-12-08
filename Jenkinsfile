@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Unit-Tests') {
             steps {
-                sh 'python3 manage.py test'
+                sh './unit_tests.sh'
             }
         }
         stage('Deploy-QA') {

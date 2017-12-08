@@ -19,10 +19,10 @@ pipeline {
                 sh './unit_tests.sh'
             }
         }
-        stage('Deploy-QA') {
+        stage('Deploy-Staging') {
 
             steps {
-                sh './deploy.sh qa'
+                sh './deploy.sh staging'
             }
         }
 
@@ -34,7 +34,7 @@ pipeline {
             }
         }
 
-        stage('Remove-QA-Environment') {
+        stage('Remove-Staging-Environment') {
 
             steps {
                 sh './remove_qa.sh'

@@ -43,7 +43,7 @@ pipeline {
                 keepAll: true,
                 reportDir: 'htmlcov',
                 reportFiles: 'index.html',
-                reportName: 'Tests'
+                reportName: 'Tests Coverage'
           ]
         }
     }

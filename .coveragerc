@@ -2,3 +2,4 @@
 source = core
 branch = True
 omit = core/*tests*
+       core/*migrations*

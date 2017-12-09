@@ -1,3 +1,5 @@
 *.sqlite3
 *.py[co]
 .idea/
+.coverage
+coverage.xml

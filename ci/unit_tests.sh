@@ -10,4 +10,4 @@ source $VENV_NAME/bin/activate
 pip install -r requirements.txt
 
 coverage run manage.py test
-coverage xml
+coverage html

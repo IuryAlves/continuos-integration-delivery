@@ -37,7 +37,14 @@ pipeline {
 
     post {
         always {
-            archive 'coverage.xml'
+            publishHTML target: [
+                allowMissing: false,
+                alwaysLinkToLastBuild: false,
+                keepAll: true,
+                reportDir: 'htmlcov',
+                reportFiles: 'index.html',
+                reportName: 'Tests'
+          ]
         }
     }
 }

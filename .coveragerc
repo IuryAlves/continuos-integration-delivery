@@ -1,0 +1,4 @@
+[run]
+source = core
+branch = True
+omit = core/*tests*

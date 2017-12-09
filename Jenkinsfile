@@ -33,12 +33,5 @@ pipeline {
 
             }
         }
-
-        stage('Remove-Staging-Environment') {
-
-            steps {
-                sh './remove_qa.sh'
-            }
-        }
     }
 }

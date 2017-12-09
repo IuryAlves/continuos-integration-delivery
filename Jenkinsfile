@@ -11,25 +11,25 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh './build.sh'
+                sh 'ci/build.sh'
             }
         }
         stage('Unit-Tests') {
             steps {
-                sh './unit_tests.sh'
+                sh 'ci/unit_tests.sh'
             }
         }
         stage('Deploy-Staging') {
 
             steps {
-                sh './deploy.sh staging'
+                sh 'ci/deploy.sh staging'
             }
         }
 
         stage('Deploy-Production') {
 
             steps {
-                sh './deploy.sh prod'
+                sh 'ci/deploy.sh prod'
 
             }
         }

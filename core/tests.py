@@ -12,6 +12,6 @@ class IndexTestCase(TestCase):
     def test_index_should_return_status_code_200(self):
         response = self.client.get(reverse('index'))
 
-        self.assertEqual(response.status_code, 404)
+        self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed('index.html')
 
